@@ -3,14 +3,14 @@
  */
 
 package com.mycompany.tareahashmap;
+import java.util.HashMap;
 
-/**
- *
- * @author Pablo Alexander
- */
 public class TareaHashMap {
-
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        HashMap<String, Object> informacionPersonal = new HashMap<>();
+        informacionPersonal.put("Nombre", "Pablo");
+        informacionPersonal.put("Edad", "33");
+        informacionPersonal.put("Ciudad", "Loja");
+        
     }
 }
