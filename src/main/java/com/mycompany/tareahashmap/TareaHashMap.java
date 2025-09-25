@@ -8,12 +8,18 @@ import java.util.HashMap;
 public class TareaHashMap {
     public static void main(String[] args) {
         HashMap<String, Object> informacionPersonal = new HashMap<>();
-        informacionPersonal.put("Nombre", "Pablo");
-        informacionPersonal.put("Edad", "33");
-        informacionPersonal.put("Ciudad", "Loja");
+        informacionPersonal.put("nombre", "Pablo");
+        informacionPersonal.put("edad", "33");
+        informacionPersonal.put("ciudad", "Loja");
         
         System.out.println("Ciudad actual: " + informacionPersonal.get("Ciudad"));
-        informacionPersonal.put("Ciudad", "Cuenca"); 
-        informacionPersonal.put("Profesion", "Ingeniero en Geologia y Minas");
+        informacionPersonal.put("ciudad", "Cuenca"); 
+        informacionPersonal.put("profesion", "Ingeniero en Geologia y Minas");
+        
+         if (!informacionPersonal.containsKey("telefono")) {
+            informacionPersonal.putIfAbsent("telefono", "0912345678");
+        }
+         
+         informacionPersonal.remove("edad");
     }
 }
