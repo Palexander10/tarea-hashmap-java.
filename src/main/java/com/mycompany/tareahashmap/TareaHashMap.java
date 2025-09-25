@@ -12,5 +12,8 @@ public class TareaHashMap {
         informacionPersonal.put("Edad", "33");
         informacionPersonal.put("Ciudad", "Loja");
         
+        System.out.println("Ciudad actual: " + informacionPersonal.get("Ciudad"));
+        informacionPersonal.put("Ciudad", "Cuenca"); 
+        informacionPersonal.put("Profesion", "Ingeniero en Geologia y Minas");
     }
 }
