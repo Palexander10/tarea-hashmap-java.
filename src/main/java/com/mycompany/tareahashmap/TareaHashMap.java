@@ -21,5 +21,10 @@ public class TareaHashMap {
         }
          
          informacionPersonal.remove("edad");
+         
+         System.out.println("\nContenido final del HashMap:");
+        for (String clave : informacionPersonal.keySet()) {
+            System.out.println(clave + " : " + informacionPersonal.get(clave));
+        }
     }
 }
